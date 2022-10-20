@@ -1,13 +1,16 @@
 ---
 import Page from "../components/Page.astro";
+import "../global.css";
 
 export interface Props {
-  title: string;
-  description: string;
-  keywords: string;
+  content: {
+    title: string;
+    description: string;
+    keywords: string;
+  }
 }
 
-const { title, description, keywords } = Astro.props as Props;
+const { content: { title, description, keywords } } = Astro.props as Props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -46,16 +49,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 	</head>
 	<body>
     <nav>
-      <a href="/">
-        Home
-      </a>
-      <a href="/about">
-        About
-      </a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
     </nav>
-    <header>
-      <h1>{title}</h1>
-    </header>
     <main>
       <slot></slot>
     </main>

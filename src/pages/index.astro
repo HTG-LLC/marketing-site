@@ -4,4 +4,27 @@ const description = "HTG LLC Software Consulting and Development"
 import Page from '../components/Page.astro';
 ---
 
-<Page title={title} description={description}></Page>
+<style>
+  .main-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 0.5em;
+  }
+
+  p {
+    margin: 0;
+  }
+</style>
+
+<Page content={{ title, description }}>
+  <section class="main-content">
+    <h1>HTG LLC</h1>
+    <p>Software Consulting and Development</p>
+  </section>
+</Page>
