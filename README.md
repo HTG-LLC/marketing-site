@@ -6,7 +6,7 @@ This site is built with [Astro](https://docs.astro.build/en/getting-started/). T
 
 ## Deployment
 
-This site is deployed to HTG LLC's AWS account and reachable at [https://www.htgreenwich.com/](https://www.htgreenwich.com/). Merging changes into the `main` branch in GitHub automatically deploys the site.
+This site is deployed to HTG LLC's AWS Account (379339752174) [via AWS Amplify](https://us-west-2.console.aws.amazon.com/amplify/home?code=c2385517262751b5945f&installation_id=30437727&setup_action=install&region=us-west-2#/d1kogse2zd1nrk) and reachable at [https://www.htgreenwich.com/](https://www.htgreenwich.com/). Merging changes into the `main` branch in GitHub automatically deploys the site.
 
 ## Help
 
